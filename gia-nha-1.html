@@ -27,7 +27,7 @@
     <meta property="og:type" content="website">
 
     <link media="all" type="text/css" rel="stylesheet" href="https://gooodnha.com/themes/gooodnha/libraries/bootstrap/bootstrap.min.v4.css">
-    <link media="all" type="text/css" rel="stylesheet" href="https://gooodnha.com/themes/gooodnha/libraries/fontawesome/css/fontawesome.min.css">
+    <link media="all" type="text/css" rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css">
     <link media="all" type="text/css" rel="stylesheet" href="https://gooodnha.com/themes/gooodnha/libraries/owl-carousel/owl.carousel.min.css">
     <link media="all" type="text/css" rel="stylesheet" href="https://gooodnha.com/themes/gooodnha/libraries/owl-carousel/owl.theme.default.css">
     <link media="all" type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
@@ -38,7 +38,9 @@
     <link media="all" type="text/css" rel="stylesheet" href="https://gooodnha.com/themes/gooodnha/css/footer.css?v=2.35.1">
     <link media="all" type="text/css" rel="stylesheet" href="https://gooodnha.com/themes/gooodnha/css/responsive.css?v=1659013674">
     <link media="all" type="text/css" rel="stylesheet" href="//unpkg.com/leaflet/dist/leaflet.css">
+
     <link media="all" type="text/css" rel="stylesheet" href="./css/gia-nha.css">
+    <link media="all" type="text/css" rel="stylesheet" href="./css/gia-nha-responsive.css">
 
 
     <script src="https://gooodnha.com/themes/gooodnha/libraries/jquery.min.js"></script>
@@ -191,8 +193,89 @@
 </header>
     <div id="app" class="wrapper_subarea">
         <div class="svg-background">
-            <div class="map-screen"></div>
+            <div class="map-screen">
+                <div class="desktop_layout">
+                    <div class="desktop_layout__leftcol">
+                        <div class="map-filter">
+                            <div class="map-filter-dropdown">
+                                <div class="dropdown-select state-default">
+                                    <div tabindex="0" class="my-select">
+                                        <div class="select">Chọn thành phố</div>
+                                        <div class="dropdown-items" style="display: none">
+                                            <div><span class="selected">Tất cả</span></div>
+                                            <div><span>Hồ Chí Minh</span></div>
+                                            <div><span>Hà Nội</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dropdown-select city-default">
+                                    <div tabindex="0" class="my-select">
+                                        <div class="select">Tất cả quận</div>
+                                        <div class="dropdown-items" style="display: none"></div>
+                                    </div>
+                                </div>
+                                <div class="dropdown-select area-default">
+                                    <div tabindex="0" class="my-select">
+                                        <div class="select">Khu vực</div>
+                                        <div class="dropdown-items" style="display: none"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="map-filter-location">
+                                <span class="icon-position"></span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="map-filter-button">
+                            <button class="btn active">Giá trong một năm</button>
+                            <button class="btn">Giá trong 5 năm</button>
+                            <button class="btn active">Không giới hạn tuổi</button>
+                            <button class="btn">Nhà 0-5 tuổi</button>
+                        </div>
+                    </div>
+                    <div class="city-results">
+                        <div class="city-list">
+                            <div class="city-item">
+                                <div class="city-name">Tp. Hồ Chí Minh</div>
+                                <div class="city-info">
+                                    <div class="price">40.5<span class="symbol">tr/m2</span></div>
+                                    <div class="deal">+ 25.50%
+                                        <span class="icon-trend-up">
+                                            <svg width="19" height="11" viewBox="0 0 19 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M17.5 1L10.375 8.125L6.625 4.375L1 10" stroke="#F2BA2A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M13 1H17.5V5.5" stroke="#F2BA2A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <div><button class="btn btn-secondary">Thống kê giao dịch <i class="fal fa-angle-right"></i></button></div>
+                                </div>
+                            </div>
+                            <div class="city-item">
+                                <div class="city-name">Hà Nội</div>
+                                <div class="city-info">
+                                    <div class="price">40.5<span class="symbol">tr/m2</span></div>
+                                    <div class="deal">+ 25.50%
+                                        <span class="icon-trend-up">
+                                            <svg width="19" height="11" viewBox="0 0 19 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M17.5 1L10.375 8.125L6.625 4.375L1 10" stroke="#F2BA2A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M13 1H17.5V5.5" stroke="#F2BA2A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <div><button class="btn btn-secondary">Thống kê giao dịch <i class="fal fa-angle-right"></i></button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desktop_layout__map">
+                        <div id="vietnam-map">
+                            <img src="./images/vietnam-canvas.svg" />
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    <script src="./js/gia-nha.js"></script>
 </body>
 </html>
