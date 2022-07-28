@@ -1,3 +1,11 @@
 .wrapper_subarea {
     height: 100vh;
 }
+
+.svg-background {
+    background: url(../images/background.svg);
+}
+
+.map-screen {
+    height: 100vh;
+}
