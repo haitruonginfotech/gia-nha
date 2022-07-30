@@ -286,6 +286,9 @@ hr {
     padding: 0;
     z-index: 9;
     cursor: pointer;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
 }
 @keyframes left {
     0% {

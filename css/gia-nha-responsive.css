@@ -23,6 +23,7 @@
         width: 100%;
         z-index: 1100;
         left: 0;
+        min-width: auto;
     }
     .transaction__scrollsection__second .blog__card {
         width: 100%;
@@ -50,6 +51,12 @@
     }
     .summary_basic_fullgrid > div {
         margin-bottom: 10px;
+    }
+    .basic_info {
+        max-width: 100%;
+    }
+    .basic_info dl {
+        width: 100%;
     }
 }
 
