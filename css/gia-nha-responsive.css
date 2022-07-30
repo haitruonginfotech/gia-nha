@@ -15,6 +15,18 @@
         right: 0;
         width: 100%;
     }
+    .trans-container {
+        height: 93vh;
+        position: absolute;
+        top: 66px;
+        transition: top 1s;
+        width: 100%;
+        z-index: 1100;
+        left: 0;
+    }
+    .transaction__scrollsection__second .blog__card {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 769px) {
@@ -24,6 +36,20 @@
     .city-results .city-list .city-item .city-name,
     .city-results .city-list .city-item .city-info {
         width: 100%;
+    }
+    .summary_basic_fullimg {
+        display: none;
+    }
+    .summary_basic-grid-cols {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: 100% 100% 100%;
+    }
+    .summary_basic_fullgrid {
+        padding: 0 0 30px 0;
+    }
+    .summary_basic_fullgrid > div {
+        margin-bottom: 10px;
     }
 }
 
